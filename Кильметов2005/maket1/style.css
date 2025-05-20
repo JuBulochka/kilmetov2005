@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+input,
+::placeholder {
+  font-family: "Rubik";
+}
+
+.modal-wrapper {
+  background-color: rgb(0, 0, 0, 0.25);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.modal {
+  position: relative;
+  padding: 72px 80px 40px 80px;
+  width: 420px;
+  background: #fff;
+}
+
+.modalComment {
+  width: 600px;
+  padding: 72px 100px 60px 100px;
+}
+
+.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 8px;
+  background: #f3f2f1;
+  color: #414141;
+  transition-duration: 0.2s;
+}
+
+.close:hover {
+  background: #414141;
+  color: white;
+  cursor: pointer;
+}
+
+.modal__title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #414141;
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+label {
+  font-size: 18px;
+  color: #8f8f8f;
+}
+
+.phone__input {
+  width: 100%;
+  border-radius: 4px;
+  outline: none;
+  padding: 12px 16px;
+  border: 1px solid #414141;
+  font-size: 24px;
+  margin-bottom: 32px;
+  box-shadow: 4px 8px 16px 0px rgba(130, 136, 129, 0.2);
+  transition-duration: 0.2s;
+}
+
+.phone__input::placeholder {
+  font-size: 24px;
+  color: #8f8f8f;
+}
+
+.phone__input:focus {
+  border: 1px solid #70c05b;
+  box-shadow: 4px 8px 16px 0px rgba(112, 192, 91, 0.2);
+}
+
+.submit {
+  width: 100%;
+  padding: 16px 0;
+  outline: none;
+  border-radius: 4px;
+  border: none;
+  background: #fcd5ba;
+  font-family: "Rubik";
+  color: #f63;
+  font-size: 24px;
+  margin-bottom: 32px;
+  transition-duration: 0.2s;
+}
+
+.submit:hover {
+  color: #fcd5ba;
+  background: #f63;
+  cursor: pointer;
+}
+
+.form-bottom {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  align-items: center;
+}
+
+.form-bottom a {
+  text-decoration: none;
+  width: 100%;
+  padding: 8px 0;
+  text-align: center;
+}
+
+.register {
+  border-radius: 4px;
+  border: 1px solid #70c05b;
+  font-size: 12px;
+  color: #70c05b;
+  transition-duration: 0.2s;
+}
+
+.register:hover {
+  background: #70c05b;
+  color: white;
+}
+
+.forgot-password {
+  font-size: 12px;
+  color: #606060;
+}
+
+.author {
+  color: #8f8f8f;
+}
+
+.comment__text {
+  color: #414141;
+  width: 100%;
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: 1px solid #bfbfbf;
+}
+
+.comments {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-bottom: 32px;
+}
+
+.comment__input {
+  width: 100%;
+  border: 1px solid #bfbfbf;
+  border-radius: 4px;
+  outline: none;
+  height: 86px;
+  resize: none;
+  padding: 8px 16px;
+  font-family: "Rubik";
+  margin-bottom: 32px;
+  transition-duration: 0.2s;
+}
+
+.comment__input:focus {
+  border: 1px solid #70c05b;
+  box-shadow: 4px 8px 16px 0px rgba(112, 192, 91, 0.2);
+}
+
+#login,
+#commentbtn {
+  font-family: "Rubik";
+  display: flex;
+  margin: 0 auto;
+  font-size: 16px;
+  padding: 20px;
+  color: var(--Main-Primary, #f63);
+  border-radius: 4px;
+  background: var(--Main-PrimaryMuted, #fcd5ba);
+  border: none;
+}
+
+#login {
+  margin: 50px 30px;
+}
+
+
